@@ -8,7 +8,7 @@ class App extends Component {
 		};
 	}
   componentDidMount(){
-	  axios.get("/users/count/5e2733444dcc532e10388d11")
+	  axios.get("/users/count/5e2733484dcc532e10388d12")
 	  .then((res)=>{
 		this.setState({
 			count: res.data.count 
@@ -29,7 +29,7 @@ class App extends Component {
 		const user={
 			count:this.state.count
 		}
-		axios.put("/users/5e2733444dcc532e10388d11",user)
+		axios.put("/users/5e2733484dcc532e10388d12",user)
 		.then((res)=>{
 		  console.log(res.data);
 		//   this.componentDidMount();
