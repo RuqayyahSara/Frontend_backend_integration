@@ -4,14 +4,14 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			count: 0
+			count: ""
 		};
 	}
   componentDidMount(){
 	  axios.get("/users/count/5e2733484dcc532e10388d12")
 	  .then((res)=>{
 		this.setState({
-			count: res.data.count 
+			count: res.data.count
 		});
 		  console.log(res.data.count);
 	  })
